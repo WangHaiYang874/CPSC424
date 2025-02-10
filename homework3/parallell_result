@@ -1,0 +1,14 @@
+Test with N = 1.00e+01: expected 1793, got 1793; seconds: 0.000727292
+  PASS
+Test with N = 1.00e+02: expected 20051, got 20051; seconds: 0.000790667
+  PASS
+Test with N = 1.00e+03: expected 653668, got 653668; seconds: 0.000189708
+  PASS
+Test with N = 1.00e+04: expected 51516873, got 51516873; seconds: 0.000217084
+  PASS
+Test with N = 1.00e+06: expected 500151271168, got 500151271168; seconds: 0.001754584
+  PASS
+Test with N = 1.00e+07: expected 50001512556150, got 50001512556150; seconds: 0.004489625
+  PASS
+Test with N = 1.00e+08: expected 5000015125773984, got 5000015125773984; seconds: 0.10030575
+  PASS

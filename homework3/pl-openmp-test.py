@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 import subprocess
 import struct
 import sys
@@ -138,7 +138,7 @@ def main():
         answer = result[0]
         seconds = result[1]
 
-        print(f"Test with N = {N}: expected {expected}, got {answer}; seconds: {seconds}")
+        print(f"Test with N = {N:.1e}: expected {expected}, got {answer}; seconds: {seconds}")
         if answer == expected:
             print("  PASS")
         else:
