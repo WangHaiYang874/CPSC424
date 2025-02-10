@@ -1,0 +1,34 @@
+// this is mostly pseudo code, not actual compilable code
+
+
+// parallel merge algorithm
+void merge(A,na,B,nb,C) {
+    // A and B are pointers to sorted arrays of size na and nb
+    // C is a pointer to an array of size na+nb, which is going to store the merged array
+
+    if na == 0 {
+        // just copy B to C
+    }
+
+    if nb == 0 {
+        // just copy A to C
+    }
+
+    int m = na/2; // sampling the middle index of A
+
+    int pivot = A[m]; // the pivot element
+
+
+    // find the index of the pivot element in B
+    int mb = binary_search(B, pivot);
+
+    C[m+mb] = pivot; // put the pivot element in the middle of C
+
+    // execute the following merges in parallel
+
+    {
+        merge(A, m, B, mb, C); // merge the left halves of A and B
+        merge(A[m+1:], na-m-1, B[mb+1:], nb-mb-1, C[m+mb+1:]); // merge the right halves of A and B
+    }
+
+}
